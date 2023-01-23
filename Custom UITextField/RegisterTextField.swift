@@ -49,6 +49,7 @@ final class RegisterTextField: UITextField {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     // MARK: - text area
     override func textRect(forBounds bounds: CGRect) -> CGRect {
         bounds.inset(by: padding)
@@ -84,5 +85,4 @@ final class RegisterTextField: UITextField {
         
         heightAnchor.constraint(equalToConstant: height).isActive = true
     }
-    
 }
